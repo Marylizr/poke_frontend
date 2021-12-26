@@ -1,0 +1,453 @@
+[
+  {
+    "name": "Balbasaur",
+    "id": 1,
+    "title": "Balbasaur",
+    "description": "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.",
+    "url": "https://www.pokemon.com/us/pokedex/bulbasaur",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
+    "largeImg":"http://marylizr.com/pokemons/1"
+  },
+  {
+    "name": "Ivysaur",
+    "id": 2,
+    "title": "Ivysaur",
+    "description": "When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
+    "url": "https://www.pokemon.com/us/pokedex/ivysaur",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png",
+    "largeImg":"http://marylizr.com/pokemons/2"
+  },
+  {
+    "name": "Venusaur",
+    "id": 3,
+    "title": "Venusaur",
+    "description": "ts plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
+    "url": "https://www.pokemon.com/us/pokedex/venusaur",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png",
+    "largeImg":"http://marylizr.com/pokemons/3"
+  },
+  {
+    "name": "Charmander",
+    "id": 4,
+    "title": "Charmander",
+    "description": "It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.",
+    "url": "https://www.pokemon.com/us/pokedex/charmander",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png",
+    "largeImg":"http://marylizr.com/pokemons/4"
+  },
+  {
+    "name": "Charmeleon",
+    "id": 5,
+    "title": "Charmeleon",
+    "description": "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.",
+    "url": "https://www.pokemon.com/us/pokedex/charmeleon",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png",
+    "largeImg":"http://marylizr.com/pokemons/5"
+  },
+  {
+    "name": "Charizard",
+    "id": 6,
+    "title": "Charizard",
+    "description": "It spits fire that is hot enough to melt boulders. It may cause forest fires by blowing flames.",
+    "url": "https://www.pokemon.com/us/pokedex/charizard",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png",
+    "largeImg":"http://marylizr.com/pokemons/6"
+  },
+  {
+    "name": "Squirtle",
+    "id": 7,
+    "title": "Squirtle",
+    "description": "When it retracts its long neck into its shell, it squirts out water with vigorous force.",
+    "url": "https://www.pokemon.com/us/pokedex/squirtle",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png",
+    "largeImg":"http://marylizr.com/pokemons/7"
+  },
+  {
+    "name": "Wartortle",
+    "id": 8,
+    "title": "Wartortle",
+    "description": "It is recognized as a symbol of longevity. If its shell has algae on it, that Wartortle is very old.",
+    "url": "https://www.pokemon.com/us/pokedex/wartortle",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png",
+    "largeImg":"http://marylizr.com/pokemons/8"
+  },
+  {
+    "name": "Blastoise",
+    "id": 9,
+    "title": "Blastoise",
+    "description": "It crushes its foe under its heavy body to cause fainting. In a pinch, it will withdraw inside its shell.",
+    "url": "https://www.pokemon.com/us/pokedex/blastoise",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png",
+    "largeImg":"http://marylizr.com/pokemons/9"
+  },
+  {
+    "name": "Caterpie",
+    "id": 10,
+    "title": "Caterpie",
+    "description": "For protection, it releases a horrible stench from the antenna on its head to drive away enemies.",
+    "url": "https://www.pokemon.com/us/pokedex/caterpie",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png",
+    "largeImg":"http://marylizr.com/pokemons/10"
+  },
+  {
+    "name": "Metapod",
+    "id": 11,
+    "title": "TMetapod",
+    "description": "It is waiting for the moment to evolve. At this stage, it can only harden, so it remains motionless to avoid attack.",
+    "url": "https://www.pokemon.com/us/pokedex/metapod",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png",
+    "largeImg":"http://marylizr.com/pokemons/11"
+  },
+  {
+    "name": "Butterfree",
+    "id": 12,
+    "title": "Butterfree",
+    "description": "There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger",
+    "url": "https://www.pokemon.com/us/pokedex/butterfree",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png",
+    "largeImg":"http://marylizr.com/pokemons/12"
+  },
+  {
+    "name": "Weedle",
+    "id": 13,
+    "title": "Weedle",
+    "description": "Beware of the sharp stinger on its head. It hides in grass and bushes where it eats leaves.",
+    "url": "https://www.pokemon.com/us/pokedex/weedle",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png",
+    "largeImg":"http://marylizr.com/pokemons/13"
+  },
+  {
+    "name": "Kakuna",
+    "id": 14,
+    "title": "Kakuna",
+    "description": "Able to move only slightly. When endangered, it may stick out its stinger and poison its enemy.",
+    "url": "https://www.pokemon.com/us/pokedex/kakuna",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png",
+    "largeImg":"http://marylizr.com/pokemons/14"
+  },
+  {
+    "name": "Beedrill",
+    "id": 15,
+    "title": "Beedrill",
+    "description": "It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
+    "url": "https://www.pokemon.com/us/pokedex/beedrill",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png",
+    "largeImg":"http://marylizr.com/pokemons/15"
+  },
+  {
+    "name": "Pidgey",
+    "id": 16,
+    "title": "Pidgey",
+    "description": "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
+    "url": "https://www.pokemon.com/us/pokedex/pidgey",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png",
+    "largeImg":"http://marylizr.com/pokemons/16"
+  },
+  {
+    "name": "Pidgeotto",
+    "id": 17,
+    "title": "Pidgeotto",
+    "description": "This Pokémon is full of vitality. It constantly flies around its large territory in search of prey.",
+    "url": "https://www.pokemon.com/us/pokedex/pidgeotto",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png",
+    "largeImg":"http://marylizr.com/pokemons/17"
+  },
+  {
+    "name": "Pidgeot",
+    "id": 18,
+    "title": "Pidgeot",
+    "description": "This Pokémon flies at Mach 2 speed, seeking prey. Its large talons are feared as wicked weapons.",
+    "url": "https://www.pokemon.com/us/pokedex/pidgeot",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png",
+    "largeImg":"http://marylizr.com/pokemons/18"
+  },
+  {
+    "name": "Rattata",
+    "id": 19,
+    "title": "Rattata",
+    "description": "Will chew on anything with its fangs. If you see one, you can be certain that 40 more live in the area.",
+    "url": "https://www.pokemon.com/us/pokedex/rattata",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png",
+    "largeImg":"http://marylizr.com/pokemons/19"
+  },
+  {
+    "name": "Raticate",
+    "id": 20,
+    "title": "Raticate",
+    "description": "ts hind feet are webbed. They act as flippers, so it can swim in rivers and hunt for prey.",
+    "url": "https://www.pokemon.com/us/pokedex/raticate",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png",
+    "largeImg":"http://marylizr.com/pokemons/20"
+  },
+  {
+    "name": "Spearow",
+    "id": 21,
+    "title": "Raticate",
+    "description": "Inept at flying high. However, it can fly around very fast to protect its territory.",
+    "url": "https://www.pokemon.com/us/pokedex/spearow",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png",
+    "largeImg":"http://marylizr.com/pokemons/21"
+  },
+  {
+    "name": "Fearow",
+    "id": 22,
+    "title": "Fearow",
+    "description": "A Pokémon that dates back many years. If it senses danger, it flies high and away, instantly.",
+    "url": "https://www.pokemon.com/us/pokedex/fearow",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/022.png",
+    "largeImg":"http://marylizr.com/pokemons/22"
+  },
+  {
+    "name": "Ekans",
+    "id": 23,
+    "title": "Ekans",
+    "description": "The older it gets, the longer it grows. At night, it wraps its long body around tree branches to rest.",
+    "url": "https://www.pokemon.com/us/pokedex/ekans",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png",
+    "largeImg":"http://marylizr.com/pokemons/23"
+  },
+  {
+    "name": "Arbok",
+    "id": 24,
+    "title": "Arbok",
+    "description": "The frightening patterns on its belly have been studied. Six variations have been confirmed.",
+    "url": "https://www.pokemon.com/us/pokedex/Arbok",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png",
+    "largeImg":"http://marylizr.com/pokemons/24"
+  },
+  {
+    "name": "Pikachu",
+    "id": 25,
+    "title": "Pikachu",
+    "description": "Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy",
+    "url": "https://www.pokemon.com/us/pokedex/pikachu",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png",
+    "largeImg":"http://marylizr.com/pokemons/25"
+  },
+  {
+    "name": "Raichu",
+    "id": 26,
+    "title": "Raichu",
+    "description": "Its long tail serves as a ground to protect itself from its own high-voltage power.",
+    "url": "https://www.pokemon.com/us/pokedex/raichu",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png",
+    "largeImg":"http://marylizr.com/pokemons/26"
+  },
+  {
+    "name": "Sandshrew",
+    "id": 27,
+    "title": "Sandshrew",
+    "description": "It loves to bathe in the grit of dry, sandy areas. By sand bathing, the Pokémon rids itself of dirt and moisture clinging to its body.",
+    "url": "https://www.pokemon.com/us/pokedex/sandshrew",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png",
+    "largeImg":"http://marylizr.com/pokemons/27"
+  },
+  {
+    "name": "Sandslash",
+    "id": 28,
+    "title": "Sandslash",
+    "description": "The drier the area Sandslash lives in, the harder and smoother the Pokémon’s spikes will feel when touched.",
+    "url": "https://www.pokemon.com/us/pokedex/sandslash",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png",
+    "largeImg":"http://marylizr.com/pokemons/28"
+  },
+  {
+    "name": "Nidoran",
+    "id": 29,
+    "title": "Nidoran",
+    "description": "Females are more sensitive to smells than males. While foraging, they’ll use their whiskers to check wind direction and stay downwind of predators.",
+    "url": "https://www.pokemon.com/us/pokedex/nidoran",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png",
+    "largeImg":"http://marylizr.com/pokemons/29"
+  },
+  {
+    "name": "Nidorina",
+    "id": 30,
+    "title": "Nidorina",
+    "description": "The horn on its head has atrophied. It’s thought that this happens so Nidorina’s children won’t get poked while their mother is feeding them.",
+    "url": "https://www.pokemon.com/us/pokedex/nidorina",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png",
+    "largeImg":"http://marylizr.com/pokemons/30"
+  },
+  {
+    "name": "Nidoqueen",
+    "id": 31,
+    "title": "Nidoqueen",
+    "description": "Nidoqueen is better at defense than offense. With scales like armor, this Pokémon will shield its children from any kind of attack.",
+    "url": "https://www.pokemon.com/us/pokedex/nidoqueen",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png",
+    "largeImg":"http://marylizr.com/pokemons/31"
+  },
+  {
+    "name": "Nidoran",
+    "id": 32,
+    "title": "Nidoran",
+    "description": "The horn on a male Nidoran’s forehead contains a powerful poison. This is a very cautious Pokémon, always straining its large ears.",
+    "url": "https://www.pokemon.com/us/pokedex/nidoran",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png",
+    "largeImg":"http://marylizr.com/pokemons/32"
+  },
+  {
+    "name": "Nidorino",
+    "id": 33,
+    "title": "Nidorino",
+    "description": "With a horn that’s harder than diamond, this Pokémon goes around shattering boulders as it searches for a moon stone.",
+    "url": "https://www.pokemon.com/us/pokedex/nidorino",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png",
+    "largeImg":"http://marylizr.com/pokemons/33"
+  },
+  {
+    "name": "Nidoking",
+    "id": 34,
+    "title": "Nidoking",
+    "description": "When it goes on a rampage, it’s impossible to control. But in the presence of a Nidoqueen it’s lived with for a long time, Nidoking calms down.",
+    "url": "https://www.pokemon.com/us/pokedex/nidoking",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png",
+    "largeImg":"http://marylizr.com/pokemons/34"
+  },
+  {
+    "name": "Clefairy",
+    "id": 35,
+    "title": "Clefairy",
+    "description": "It is said that happiness will come to those who see a gathering of Clefairy dancing under a full moon.",
+    "url": "https://www.pokemon.com/us/pokedex/clefairy",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png",
+    "largeImg":"http://marylizr.com/pokemons/35"
+  },
+  {
+    "name": "Clefable",
+    "id": 36,
+    "title": "Clefable",
+    "description": "A timid fairy Pokémon that is rarely seen, it will run and hide the moment it senses people.",
+    "url": "https://www.pokemon.com/us/pokedex/clefable",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png",
+    "largeImg":"http://marylizr.com/pokemons/36"
+  },
+  {
+    "name": "Vulpix",
+    "id": 37,
+    "title": "Vulpix",
+    "description": "While young, it has six gorgeous tails. When it grows, several new tails are sprouted.",
+    "url": "https://www.pokemon.com/us/pokedex/vulpix",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png",
+    "largeImg":"http://marylizr.com/pokemons/37"
+  },
+  {
+    "name": "Ninetales",
+    "id": 38,
+    "title": "Ninetales",
+    "description": "It is said to live 1,000 years, and each of its tails is loaded with supernatural powers.",
+    "url": "https://www.pokemon.com/us/pokedex/ninetales",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png",
+    "largeImg":"http://marylizr.com/pokemons/38"
+  },
+  {
+    "name": "Jigglypuff",
+    "id": 39,
+    "title": "Jigglypuff",
+    "description": "Jigglypuff has top-notch lung capacity, even by comparison to other Pokémon. It won’t stop singing its lullabies until its foes fall asleep.",
+    "url": "https://www.pokemon.com/us/pokedex/jigglypuff",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png",
+    "largeImg":"http://marylizr.com/pokemons/39"
+  },
+  {
+    "name": "Wigglytuff",
+    "id": 40,
+    "title": "Wigglytuff",
+    "description": "The more air it takes in, the more it inflates. If opponents catch it in a bad mood, it will inflate itself to an enormous size to intimidate them.",
+    "url": "https://www.pokemon.com/us/pokedex/wigglytuff",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/040.png",
+    "largeImg":"http://marylizr.com/pokemons/40"
+  },
+  {
+    "name": "Zubat",
+    "id": 41,
+    "title": "Zubat",
+    "description": "It emits ultrasonic waves from its mouth to check its surroundings. Even in tight caves, Zubat flies around with skill.",
+    "url": "https://www.pokemon.com/us/pokedex/zubat",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/041.png",
+    "largeImg":"http://marylizr.com/pokemons/41"
+  },
+  {
+    "name": "Golbat",
+    "id": 42,
+    "title": "Golbat",
+    "description": "It loves to drink other creatures’ blood. It’s said that if it finds others of its kind going hungry, it sometimes shares the blood it’s gathered.",
+    "url": "https://www.pokemon.com/us/pokedex/golbat",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/042.png",
+    "largeImg":"http://marylizr.com/pokemons/42"
+  },
+  {
+    "name": "Oddish",
+    "id": 43,
+    "title": "Oddish",
+    "description": "If exposed to moonlight, it starts to move. It roams far and wide at night to scatter its seeds.",
+    "url": "https://www.pokemon.com/us/pokedex/oddish",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/043.png",
+    "largeImg":"http://marylizr.com/pokemons/43"
+  },
+  {
+    "name": "Gloom",
+    "id": 44,
+    "title": "Gloom",
+    "description": "Its pistils exude an incredibly foul odor. The horrid stench can cause fainting at a distance of 1.25 miles.",
+    "url": "https://www.pokemon.com/us/pokedex/gloom",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/044.png",
+    "largeImg":"http://marylizr.com/pokemons/44"
+  },
+  {
+    "name": "Vileplume",
+    "id": 45,
+    "title": "Vileplume",
+    "description": "It has the world’s largest petals. With every step, the petals shake out heavy clouds of toxic pollen.",
+    "url": "https://www.pokemon.com/us/pokedex/vileplume",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png",
+    "largeImg":"http://marylizr.com/pokemons/45"
+  },
+  {
+    "name": "Paras",
+    "id": 46,
+    "title": "Paras",
+    "description": "Burrows under the ground to gnaw on tree roots. The mushrooms on its back absorb most of the nutrition.",
+    "url": "https://www.pokemon.com/us/pokedex/paras",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/046.png",
+    "largeImg":"http://marylizr.com/pokemons/46"
+  },
+  {
+    "name": "Parasect",
+    "id": 47,
+    "title": "Parasect",
+    "description": "The bug host is drained of energy by the mushroom on its back. The mushroom appears to do all the thinking.",
+    "url": "https://www.pokemon.com/us/pokedex/parasect",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png",
+    "largeImg":"http://marylizr.com/pokemons/47"
+  },
+  {
+    "name": "Venonat",
+    "id": 48,
+    "title": "Venonat",
+    "description": "Its large eyes act as radar. In a bright place, you can see that they are clusters of many tiny eyes.",
+    "url": "https://www.pokemon.com/us/pokedex/venonat",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/048.png",
+    "largeImg":"http://marylizr.com/pokemons/48"
+  },
+  {
+    "name": "Venomoth",
+    "id": 49,
+    "title": "Venomoth",
+    "description": "The powdery scales on its wings are hard to remove from skin. They also contain poison that leaks out on contact.",
+    "url": "https://www.pokemon.com/us/pokedex/venomoth",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/049.png",
+    "largeImg":"http://marylizr.com/pokemons/49"
+  },
+  {
+    "name": "Diglett",
+    "id": 50,
+    "title": "Diglett",
+    "description": "If a Diglett digs through a field, it leaves the soil perfectly tilled and ideal for planting crops.",
+    "url": "https://www.pokemon.com/us/pokedex/diglett",
+    "thumbnailUrl": "https://assets.pokemon.com/assets/cms2/img/pokedex/full/050.png",
+    "largeImg":"http://marylizr.com/pokemons/50"
+  }
+  
+]
