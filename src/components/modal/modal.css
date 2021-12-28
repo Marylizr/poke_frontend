@@ -40,3 +40,18 @@
   top: 1rem;
   right: 1rem;
 }
+
+.fav {
+  position: absolute;
+  top: 1rem;
+  right: 3rem;
+}
+
+.read {
+  width: 150px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: gray;
+}

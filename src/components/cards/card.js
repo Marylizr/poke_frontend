@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './cards.module.css'
 
 
-const Cards = ( { pokemon, onClick } ) => {
+const Card = ( { pokemon, onClick } ) => {
   
    return (
       <div className={styles.container} style={{ backgroundImage: `url(${pokemon.thumbnailUrl})` }} onClick={onClick}>
@@ -14,4 +14,4 @@ const Cards = ( { pokemon, onClick } ) => {
    )
 }
 
-export default Cards;
+export default Card;

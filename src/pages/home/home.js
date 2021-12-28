@@ -4,10 +4,12 @@ import styles from './home.module.css'
 import Sidebar from '../../components/Sidebar/sidebar';
 import CardList from '../../pages/cardList/cardList';
 import Paginator from '../../components/pagination/paginator';
-import Favs from '../cardList/favs/favs';
 
-const Home = () => {
-   const [favCards, setFavCards]  = useState([]);
+
+const Home = ({favCards, setFavCards}) => {
+
+   const [searchValue, setSearchValue] = useState();
+   
 
    const addToFav = (pokemon) => {       
       setFavCards([...favCards, pokemon]);
@@ -16,12 +18,11 @@ const Home = () => {
    return (
       <div className={styles.container}>
          <div>
-          <Sidebar/>
-        </div>
-        <div>
-          <CardList addToFav={addToFav}/>
+          <Sidebar onSearch={setSearchValue}/>
+         </div>
+         <div>
+          <CardList searchValue={searchValue} addToFav={addToFav}/>
           <Paginator/>
-          <Favs favCards={favCards}/>
         </div> 
       </div>
    )
