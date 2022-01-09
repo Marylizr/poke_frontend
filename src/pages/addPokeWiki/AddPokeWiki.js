@@ -2,12 +2,15 @@ import React from 'react'
 import Sidebar from '../../components/Sidebar/sidebar';
 import { useForm } from "react-hook-form";
 import styles from '../addPokeWiki/addPokeWiki.module.css'
+// import Card from '../../components/cards/card';
+import { useState } from 'react';
 
 
 
 const AddPokeWiki  = () => {
 
    const { register, handleSubmit, formState: { errors } } = useForm();
+   const [ lastData, setLastData ] = useState([]);
 
    const onSubmit = data => {
        console.log(data);
@@ -49,9 +52,9 @@ const AddPokeWiki  = () => {
                <input type="text"  {...register("largeImg", { required: true })} />
                {errors.largeImg && <p className={styles.error}>This field is required</p>}
                <br/>
-               <input className={styles.enviar} type="submit" />
+               <input className={styles.enviar} type="submit" onClick={() => setLastData[lastData.length-1]} />
            </form>
-
+           {/* <Card item={lastData} /> */}
        </div>
    );
 };

@@ -3,6 +3,7 @@ import styles from '../register/register.module.css'
 import Sidebar from '../../components/Sidebar/sidebar';
 import { useForm } from "react-hook-form";
 
+
 const Register = () => {
  
    const { register, handleSubmit, formState: { errors } } = useForm();
@@ -21,7 +22,7 @@ const Register = () => {
           return response.json();
        })
        .then(json => {
-          alert(json);
+          alert('user created');
        })
        .catch(error => {
           alert(error);
@@ -31,6 +32,8 @@ const Register = () => {
    return (
       <div className={styles.create}>
          <Sidebar />
+
+         <h2>Log in</h2>
          
          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
          <h2>Create new User</h2>
@@ -55,7 +58,7 @@ const Register = () => {
              {errors.largeImg && <p className={styles.error}>This field is required</p>}
              <br/>
 
-             <input className={styles.enviar} type="submit" label="Send"/>
+             <input className={styles.enviar} type="submit" label="Send" />
          </form>
      
       </div>

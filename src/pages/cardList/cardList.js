@@ -32,7 +32,7 @@ const CardList = ({ addToFav, searchValue, isInCart }) => {
        }, [data, setFilteredData]);
      
        useEffect(() => {
-         fetch('http://localhost:3010/createPokeWiki5')
+         fetch('http://localhost:3010/createPokeWiki')
            .then((response) => {
               if (!response.ok){
                  throw new Error("error")
