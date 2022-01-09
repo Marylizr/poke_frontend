@@ -1,42 +1,65 @@
 import React from 'react'
 import Card from '../../components/cards/card';
-import pokemons from '../../assets/response.json'
 import styles from './cardList.module.css'
 import Modal from '../../components/modal/modal';
 import { useState, useEffect } from 'react';
 import { useModal } from '../../hooks/useModal';
-import { useNavigate } from 'react-router-dom';
+import { ExternalLink } from 'react-external-link';
 
 
 const CardList = ({ addToFav, searchValue, isInCart }) => {
   
    const [selectedItem, setSelectedItem] = useState();
    const [isOpenModal, openModal, closeModal] = useModal(false);
-   const [filteredData, setFilteredData] = useState(pokemons);
-   const navigate = useNavigate();
+   const [filteredData, setFilteredData] = useState([]);
+   const [data, setData] = useState([]);
 
       useEffect(() => {
-         if (searchValue) {
-            const filtered = pokemons.filter( pokemon => {
-               return pokemon.name.toLocaleLowerCase().includes(searchValue);
-            }); 
-               setFilteredData(filtered);
+         if (searchValue !== '') {
+            setFilteredData(data.filter(({ name }) => {
+              const regex = new RegExp(searchValue);
+              return regex.test(name);
+            }))
+               
          }
-         
-      }, [searchValue]);
+      }, [searchValue, setFilteredData, data]);
       console.log(filteredData);
+
+      useEffect(() => {
+         if (data.length) {
+           setFilteredData(data);
+         }
+       }, [data, setFilteredData]);
+     
+       useEffect(() => {
+         fetch('http://localhost:3010/createPokeWiki5')
+           .then((response) => {
+              if (!response.ok){
+                 throw new Error("error")
+              }
+              return response.json();
+           })
+           .then((json) => {
+            setData(json);
+           })
+           .catch((error) => {
+              console.log(error);
+           })
+       }, []);
 
    return (
       <div className={styles.content}>
-        {filteredData.map(pokemon => <Card key={pokemon.id} addToFav={addToFav} pokemon={pokemon} onClick={() => {
+        {filteredData.map(pokemon => <Card pokemon={pokemon} id={pokemon._id} key={pokemon._id} addToFav={addToFav}  onClick={() => {
             setSelectedItem(pokemon);
             openModal();           
       }} />)} 
 
+      
+
         {selectedItem && 
             <Modal isOpen={isOpenModal} closeModal={closeModal}>
             <img src={selectedItem.largeImg} width="300" alt="img"/>
-            <button className="read" onClick= {() => {navigate(`${selectedItem.url}`)} }>Read more...</button>
+            <ExternalLink className="read"target="_blank" href={`https://www.pokemon.com/us/pokedex/${selectedItem.name.toLocaleLowerCase()}`}>Read More</ExternalLink>
             {!isInCart && <button className="fav" onClick={() => addToFav(selectedItem)}>❤︎</button>}
             </Modal>}
       </div>

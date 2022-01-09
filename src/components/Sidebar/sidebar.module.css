@@ -15,10 +15,45 @@
   margin-top: 20px;
 }
 
-input {
+.sideInput {
   margin-top: 20px;
   height: 30px;
   border-radius: 20px;
   border: 1px gray solid;
   text-align: center;
+}
+
+.nav > ul > li {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0 10px 0;
+  list-style-type: none;
+  width: 245px;
+  height: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.nav {
+  background-image: linear-gradient(
+    to top,
+    rgba(224, 224, 224, 100),
+    rgba(255, 255, 255, 100)
+  );
+  text-align: center;
+  margin-top: 15px;
+}
+
+.nav > ul > li:hover {
+  background-color: white;
+}
+
+.nav > ul > li > a {
+  color: gray;
+  text-decoration: none;
+}
+
+ul {
+  padding-inline-start: 0px;
+  padding: 0px;
+  margin: 0px;
 }

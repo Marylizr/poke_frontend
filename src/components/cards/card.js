@@ -7,7 +7,7 @@ const Card = ( { pokemon, onClick } ) => {
    return (
       <div className={styles.container} style={{ backgroundImage: `url(${pokemon.thumbnailUrl})` }} onClick={onClick}>
          <div className={styles.info}>
-         <p><b>{pokemon.title}</b></p>
+         <h2>{pokemon.name}</h2>
          <p>{pokemon.description}</p>
          </div>
       </div>

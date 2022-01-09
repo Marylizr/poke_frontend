@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-  justify-content: center;
+  margin-left: 20px;
 }
 
 h3 {
@@ -12,4 +12,8 @@ h3 {
 
 p {
   text-align: center;
+}
+
+.container {
+  display: flex;
 }

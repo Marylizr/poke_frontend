@@ -4,7 +4,8 @@ import { Route, Routes } from 'react-router';
 import { useState } from 'react';
 import React from 'react';
 import Favs from './pages/favs/favs';
-import Details from './pages/details/details';
+import AddPokeWiki from './pages/addPokeWiki/AddPokeWiki';
+import Register from './pages/register/Register';
 
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/favs" element={<Favs favCards={favCards} />} />
-          <Route path=":url" element={<Details />} />
+          <Route path="/create" element={<AddPokeWiki />} />
+          <Route path="/users" element={<Register />} />
       </Routes>
         
     </div>
