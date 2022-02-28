@@ -3,7 +3,7 @@ import styles from './cards.module.css'
 
 
 const Card = ( { pokemon, onClick } ) => {
-  
+   
    return (
       <div className={styles.container} style={{ backgroundImage: `url(${pokemon.thumbnailUrl})` }} onClick={onClick}>
          <div className={styles.info}>

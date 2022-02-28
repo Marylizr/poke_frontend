@@ -2,7 +2,7 @@ import React from 'react'
 import Sidebar from '../../components/Sidebar/sidebar';
 import { useForm } from "react-hook-form";
 import styles from '../addPokeWiki/addPokeWiki.module.css'
-// import Card from '../../components/cards/card';
+import Card from '../../components/cards/card';
 import { useState } from 'react';
 
 
@@ -10,10 +10,11 @@ import { useState } from 'react';
 const AddPokeWiki  = () => {
 
    const { register, handleSubmit, formState: { errors } } = useForm();
-   const [ lastData, setLastData ] = useState([]);
+   const [ lastData, setLastData ] = useState();
 
    const onSubmit = data => {
        console.log(data);
+       setLastData(data);
        fetch('http://localhost:3010/createPokeWiki', {
            method: 'POST',
            headers: {
@@ -26,7 +27,6 @@ const AddPokeWiki  = () => {
 
    return (
        <div className={styles.create}>
-          <Sidebar />
          
            <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
            <h2>Create new PokeWiki</h2>
@@ -52,9 +52,9 @@ const AddPokeWiki  = () => {
                <input type="text"  {...register("largeImg", { required: true })} />
                {errors.largeImg && <p className={styles.error}>This field is required</p>}
                <br/>
-               <input className={styles.enviar} type="submit" onClick={() => setLastData[lastData.length-1]} />
+               <input className={styles.enviar} type="submit" />
            </form>
-           {/* <Card item={lastData} /> */}
+           {lastData && <Card pokemon={lastData}/>}
        </div>
    );
 };

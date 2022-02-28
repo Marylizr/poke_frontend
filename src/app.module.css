@@ -28,6 +28,19 @@
   color: #61dafb;
 }
 
+.container {
+  display: flex;
+  background: #f1efef;
+}
+
+.content {
+  flex: 1;
+  max-width: calc(100vw - 250px);
+  min-height: 100vh;
+  height: 100%;
+  background: white;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

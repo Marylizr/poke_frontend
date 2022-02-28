@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../register/register.module.css'
-import Sidebar from '../../components/Sidebar/sidebar';
+
 import { useForm } from "react-hook-form";
 
 
@@ -31,7 +31,7 @@ const Register = () => {
 
    return (
       <div className={styles.create}>
-         <Sidebar />
+        
 
          <h2>Log in</h2>
          

@@ -2,10 +2,12 @@ import React from 'react';
 import  './modal.css';
 
 
-const Modal = ({children, isOpen, closeModal, addToFav}) => {
+const Modal = ({children, isOpen, closeModal, addtofav}) => {
+
+  
 
   return(
-    <div addToFav={addToFav} className={`modal ${isOpen && "is-open"}`}>
+    <div addtofav={addtofav} className={`modal ${isOpen && "is-open"}`}>
       <div className="modalContainer">
          <button className="modalClose" onClick={closeModal}>X</button>
          {children }  

@@ -19,7 +19,7 @@ const Sidebar = ({ onSearch }) => {
             <li><Link to="/favs">My Fav</Link></li>
             <li><ExternalLink href="https://www.pokemon.com/us/pokemon-news/" target="_blank">News</ExternalLink></li>
             <li><Link to="/create">Add a PokeWiki</Link></li>
-            <li><Link to="/users">Get in</Link></li>
+            <li><Link to="/users">Register</Link></li>
          </ul>
          </div>
         

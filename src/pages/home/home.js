@@ -1,27 +1,28 @@
 import React from 'react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import styles from './home.module.css'
-import Sidebar from '../../components/Sidebar/sidebar';
 import CardList from '../../pages/cardList/cardList';
 import Paginator from '../../components/pagination/paginator';
+import Favs from '../favs/favs';
 
 
-const Home = ({favCards, setFavCards}) => {
+const Home = ({ searchValue }) => {
 
-   const [searchValue, setSearchValue] = useState();
    
+   const [favCards, setFavCards]  = useState([]);
 
-   const addToFav = (pokemon) => {       
-      setFavCards([...favCards, pokemon]);
- }
+   const addtofav = (pokemon) => {       
+    setFavCards([...favCards, pokemon]);
+}
 
    return (
       <div className={styles.container}>
          <div>
-          <Sidebar onSearch={setSearchValue}/>
+          
          </div>
          <div>
-          <CardList searchValue={searchValue} addToFav={addToFav}/>
+          <CardList searchValue={searchValue} addtofav={addtofav}/>
+          <Favs favCards={favCards} setFavCards={setFavCards} />
           <Paginator/>
         </div> 
       </div>

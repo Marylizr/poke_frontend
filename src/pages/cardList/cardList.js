@@ -7,7 +7,7 @@ import { useModal } from '../../hooks/useModal';
 import { ExternalLink } from 'react-external-link';
 
 
-const CardList = ({ addToFav, searchValue, isInCart }) => {
+const CardList = ({ addtofav, searchValue, isInFav=false }) => {
   
    const [selectedItem, setSelectedItem] = useState();
    const [isOpenModal, openModal, closeModal] = useModal(false);
@@ -47,20 +47,45 @@ const CardList = ({ addToFav, searchValue, isInCart }) => {
            })
        }, []);
 
+      const handleDelete = (id) => { 
+         fetch('http://localhost:3010/createPokeWiki/'+ id, {
+            method: 'DELETE',
+            headers: {
+               'Content-Type': 'application/json',
+           },
+           body: JSON.stringify(data)
+       })
+    }
+
+    const onFav = () => {
+      
+      fetch('http://localhost:3010/favs', {
+            method: 'POST',
+            headers: {
+               'Content-Type': 'application/json',
+           },
+           body: JSON.stringify(data)
+       }).then(() => {addtofav()});   
+   }
+   console.log(onFav);
+    
+   
+
+
+
    return (
       <div className={styles.content}>
-        {filteredData.map(pokemon => <Card pokemon={pokemon} id={pokemon._id} key={pokemon._id} addToFav={addToFav}  onClick={() => {
+        {filteredData.map(pokemon => <Card pokemon={pokemon} id={pokemon._id} key={pokemon._id} addtofav={addtofav}  onClick={() => {
             setSelectedItem(pokemon);
             openModal();           
       }} />)} 
-
-      
 
         {selectedItem && 
             <Modal isOpen={isOpenModal} closeModal={closeModal}>
             <img src={selectedItem.largeImg} width="300" alt="img"/>
             <ExternalLink className="read"target="_blank" href={`https://www.pokemon.com/us/pokedex/${selectedItem.name.toLocaleLowerCase()}`}>Read More</ExternalLink>
-            {!isInCart && <button className="fav" onClick={() => addToFav(selectedItem)}>❤︎</button>}
+            {!isInFav && <button className="fav" onClick={() => {onFav()}}>❤︎</button>}
+            <button onClick={() => {handleDelete(selectedItem._id)}}>Delete</button>
             </Modal>}
       </div>
    )
