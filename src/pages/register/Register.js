@@ -1,64 +1,62 @@
-import React from 'react'
-import styles from '../register/register.module.css'
-
+import React from 'react';
+import styles from '../register/register.module.css';
+import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
+import { useEffect } from "react";
+import customFetch from '../../api';
+import { setUserSession } from "../../api/auth";
+import Sidebar from '../../components/Sidebar/sidebar';
 
 
 const Register = () => {
- 
-   const { register, handleSubmit, formState: { errors } } = useForm();
+   const navigate = useNavigate();
 
-   const onSubmit = data => {
-       console.log(data);
-       fetch('http://localhost:3010/users', {
-           method: 'POST',
-           headers: {
-               'Content-Type': 'application/json',
-           },
-           body: JSON.stringify(data)
-       })
-       .then(response => {
-          if(!response.ok) throw new Error("It could´t be uploaded")
-          return response.json();
-       })
-       .then(json => {
-          alert('user created');
-       })
-       .catch(error => {
-          alert(error);
-       })
-   }
+   useEffect(() => {
+      const token = localStorage.getItem("token");
+      if (token) navigate("/dashboard");
+    }, [navigate]);
+
+    const { register, handleSubmit, formState: { errors } } = useForm();
+  
+    const onSubmit = (data) => {
+      customFetch("POST", "users", {body: data})
+      .then(userSession => {
+        setUserSession(userSession);
+        navigate("/dashboard");
+      }).catch(error => {
+          'REQUEST_FAILED'
+        console.error(error);
+      });
+    }
 
    return (
       <div className={styles.create}>
-        
-
-         <h2>Log in</h2>
          
          <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
          <h2>Create new User</h2>
-             <label>Name</label>
-             <input type="text"  {...register("name", { required: true, pattern: /^[A-Za-z]+$/i  })} />
+             
+             <input placeholder='your Name' type="text"  {...register("name", { required: true, pattern: /^[A-Za-z]+$/i  })} />
              {errors.name?.type === 'required' && <p className={styles.error}>This field is required</p>}
              {errors.name?.type === 'pattern' && <p className={styles.error}>Incorrect name</p>}
-             <br/>
+             
 
-             <label>Last Name</label>
-             <input  {...register("lastName", { required: true, pattern: /^[A-Za-z]+$/i })} />
+             <input placeholder='your Last Name' {...register("lastName", { required: true, pattern: /^[A-Za-z]+$/i })} />
              {errors.lasName && <p className={styles.error}>This field is required</p>}
              
-             <br/>
-             <label>Email</label>
-             <input type="text"  {...register("email", { required: true })} />
+             <input placeholder='your email' type="text"  {...register("email", { required: true })} />
              {errors.email && <p className={styles.error}>This field is required</p>}
-             <br/>
+             
 
-             <label>Bio</label>
-             <textarea type="text"  {...register("largeImg", { required: true })}></textarea>
-             {errors.largeImg && <p className={styles.error}>This field is required</p>}
-             <br/>
+             <input placeholder='your safe password' type="password"  {...register("password", { required: true })} />
+             {errors.password && <p className={styles.error}>This field is required</p>}
+             
+             <div className={styles.send_button}>
+                <input type="submit" value="Sign Up" />
+             </div>
 
-             <input className={styles.enviar} type="submit" label="Send" />
+             <p>Have an account? <Link className={styles.link} to='/login'>Log In</Link></p>
+
          </form>
      
       </div>

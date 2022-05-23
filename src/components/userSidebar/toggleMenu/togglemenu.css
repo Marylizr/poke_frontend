@@ -1,0 +1,39 @@
+.toggle {
+   display: none;
+  }
+  
+  .toggle.is-open {
+   display: flex;
+   overflow-y: auto;
+   flex-direction: column;
+   flex-wrap: wrap;
+   align-content: center;
+   justify-content: flex-start;
+   align-items: center;
+  }
+  
+  .toggleContainer {
+     background-color: white;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: nowrap;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
+     margin-top: 15px;
+  }
+
+  .toggle.is-open li > a {
+   color: gray;
+   text-decoration: none;
+  }
+
+  .toggleContainer li {
+   text-decoration: none;
+   padding: 10px 0 10px 0;
+   list-style-type: none;
+   width: 245px;
+   height: 20px;
+   font-size: 14px;
+   border-bottom: 1px solid gray;
+}

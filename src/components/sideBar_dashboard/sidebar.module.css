@@ -1,0 +1,82 @@
+.sidebar {
+   width: 250px;
+   height: 100vh;
+   background-color: lightgrey;
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   align-content: center;
+   align-items: center;
+ }
+ 
+ .logo {
+   width: 150px;
+   height: auto;
+   margin-top: 20px;
+ }
+ 
+ .sideInput > input {
+   margin-top: 20px;
+   height: 30px;
+   border-radius: 20px;
+   border: 1px gray solid;
+   text-align: center;
+   width: 12vw;
+ }
+ 
+ .nav > ul > li {
+   color: white;
+   text-decoration: none;
+   padding: 10px 0 10px 0;
+   list-style-type: none;
+   width: 245px;
+   height: 20px;
+   border-bottom: 1px solid gray;
+ }
+ 
+ .nav {
+   background-image: linear-gradient(
+     to top,
+     rgba(224, 224, 224, 100),
+     rgba(255, 255, 255, 100)
+   );
+   text-align: center;
+   margin-top: 15px;
+ }
+ 
+ .nav > ul > li:hover {
+   background-color: white;
+ }
+ 
+ .nav > ul > li > a {
+   color: gray;
+   text-decoration: none;
+ }
+ 
+ ul {
+   padding-inline-start: 0px;
+   padding: 0px;
+   margin: 0px;
+ }
+ 
+ .random{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+ }
+
+ .log_out{
+   border-radius: 5px;
+
+ }
+
+ .nav > ul > li > button{
+  border: none;
+  color: gray;
+  background-color: transparent;
+  font-size: 16px;
+}

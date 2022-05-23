@@ -7,12 +7,13 @@ import { useModal } from '../../hooks/useModal';
 import { ExternalLink } from 'react-external-link';
 
 
-const CardList = ({ addtofav, searchValue, isInFav=false }) => {
+const CardList = ({ searchValue, isInFav=false }) => {
   
    const [selectedItem, setSelectedItem] = useState();
    const [isOpenModal, openModal, closeModal] = useModal(false);
    const [filteredData, setFilteredData] = useState([]);
    const [data, setData] = useState([]);
+   const [favCards, setFavCards]  = useState([]);
 
       useEffect(() => {
          if (searchValue !== '') {
@@ -54,28 +55,40 @@ const CardList = ({ addtofav, searchValue, isInFav=false }) => {
                'Content-Type': 'application/json',
            },
            body: JSON.stringify(data)
-       })
-    }
+         })
+      }
 
+    const addtofav = (pokemon) => {       
+      setFavCards([...favCards, pokemon]);
+  }
+  
     const onFav = () => {
-      
+      const data = { 
+         id: selectedItem._id,
+         name: selectedItem.name,
+         title: selectedItem.title,
+         description: selectedItem.description,
+         url:selectedItem.url,
+         thumbnailUrl: selectedItem.thumbnailUrl,
+         largeImg: selectedItem.largeImg,
+         
+        }
       fetch('http://localhost:3010/favs', {
             method: 'POST',
             headers: {
                'Content-Type': 'application/json',
            },
            body: JSON.stringify(data)
-       }).then(() => {addtofav()});   
+       }).then(() => {
+          addtofav()
+         }
+      );   
    }
-   console.log(onFav);
-    
    
-
-
-
    return (
       <div className={styles.content}>
-        {filteredData.map(pokemon => <Card pokemon={pokemon} id={pokemon._id} key={pokemon._id} addtofav={addtofav}  onClick={() => {
+        {filteredData.map(pokemon => <Card pokemon={pokemon} id={pokemon._id} key={pokemon._id} addtofav={addtofav}  
+        onClick={() => {
             setSelectedItem(pokemon);
             openModal();           
       }} />)} 

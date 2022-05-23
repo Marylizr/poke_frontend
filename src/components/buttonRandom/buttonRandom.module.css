@@ -1,0 +1,9 @@
+.random{
+   margin-top: 20px;
+   height: 30px;
+   border-radius: 20px;
+   border: 1px gray solid;
+   text-align: center;
+   width: 12vw;
+   background-color: white;
+}

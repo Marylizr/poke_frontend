@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../../components/Sidebar/sidebar';
+import SidebarDashboard from '../../components/sideBar_dashboard/SidebarDashboard';
 import { useForm } from "react-hook-form";
 import styles from '../addPokeWiki/addPokeWiki.module.css'
 import Card from '../../components/cards/card';
@@ -22,12 +22,13 @@ const AddPokeWiki  = () => {
            },
            body: JSON.stringify(data)
        })
+       .then(res => {window.location.reload()}) 
    }
 
 
    return (
        <div className={styles.create}>
-         
+         <SidebarDashboard/>
            <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
            <h2>Create new PokeWiki</h2>
                <label>Name</label>
@@ -52,7 +53,7 @@ const AddPokeWiki  = () => {
                <input type="text"  {...register("largeImg", { required: true })} />
                {errors.largeImg && <p className={styles.error}>This field is required</p>}
                <br/>
-               <input className={styles.enviar} type="submit" />
+               <input className={styles.enviar} type="submit"  />
            </form>
            {lastData && <Card pokemon={lastData}/>}
        </div>
