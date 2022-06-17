@@ -1,13 +1,11 @@
 .create{
   display: flex;
-   flex-direction: row;
-   flex-wrap: nowrap;
-   align-content: center;
-   justify-content: center;
-   align-items: center;
-   width: 80vw;
-   height: 100vh;
-   background-color: white;
+
+}
+
+.content{
+  display: flex;
+  margin-left: 20px;
 }
 
 .form > input{
@@ -154,31 +152,10 @@
   font-size: x-large;
 }
 
-  .currency {
-     height: 4vh;
-   font-size: larger;
-   text-align: center;
-   border-radius: 3px;
-   border: none;
-   box-shadow: 0px 4px 4px rgb(51 51 51 / 4%), 0px 4px 16px rgb(51 51 51 / 18%);
-   padding: 5px;
-   width: 20vw;
-  }
 
   .block_img > img{
      width: 80vw;
   }
 
-  .logo > img{
-     height: auto;
-     width: 20vw;
-     border-radius: 0px;
-     margin-top:15vh;
-     display: flex;
-     flex-direction: column;
-     flex-wrap: nowrap;
-     align-content: center;
-     justify-content: center;
-     align-items: center;
-  }
+
 }

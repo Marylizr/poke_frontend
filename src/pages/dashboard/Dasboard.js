@@ -2,13 +2,12 @@ import styles from "./dashboard.module.css"
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { removeSession } from "../../api/auth";
-
 import CardList from "../cardList/cardList";
 
-const Dashboard = ({ searchValue, setSearchValue}) => {
+const Dashboard = () => {
   const [name, setName] = useState("");
   const navigate = useNavigate();
-
+ 
     
   useEffect(() => {
     fetch('http://localhost:3010/users/me')
@@ -33,7 +32,7 @@ const Dashboard = ({ searchValue, setSearchValue}) => {
       
       <div className={styles.content}>
         <h3>Welcome {name.toUpperCase()}</h3>
-        <CardList searchValue={searchValue} /> 
+        <CardList/> 
       </div>
     </div>  
   )

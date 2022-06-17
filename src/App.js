@@ -6,7 +6,9 @@ import Favs from './pages/favs/favs';
 import Register from './pages/register/Register';
 import Login from './pages/login/login';
 import { useState } from 'react';
-import Sidebar from './components/Sidebar/sidebar';
+
+
+import SecuredContent from './pages/securedContent/securedContent';
 
 function App() {
   
@@ -15,13 +17,14 @@ function App() {
 
   return (
     <div className={styles.container}>
-      <Sidebar />
+     
       <div className={styles.content}>
           <Routes>
               <Route path="/" element={<Home searchValue={searchValue} onSearch={setSearchValue}/>} />
               <Route path="/favs" element={<Favs />} />
               <Route path="/users" element={<Register />} />
               <Route path="/login" element={<Login />} />
+              <Route path="/securedcontent/*" element={<SecuredContent />} />
           </Routes>
       </div>
     </div>

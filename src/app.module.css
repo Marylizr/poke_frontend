@@ -39,8 +39,7 @@
   min-height: 100vh;
   height: 100%;
   background: white;
-  display: flex;
-  justify-content: center;
+
 }
 
 @keyframes App-logo-spin {

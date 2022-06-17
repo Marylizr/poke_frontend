@@ -21,7 +21,7 @@ const ButtonRandom = ({onRandom}) => {
         .catch((error) => {
            console.log(error);
         })
-    }, []);
+    }, [setData]);
 
     return(
         <div>

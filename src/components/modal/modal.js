@@ -4,8 +4,6 @@ import  './modal.css';
 
 const Modal = ({children, isOpen, closeModal, addtofav}) => {
 
-  
-
   return(
     <div addtofav={addtofav} className={`modal ${isOpen && "is-open"}`}>
       <div className="modalContainer">

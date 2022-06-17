@@ -1,18 +1,17 @@
 import React from 'react'
 import styles from './home.module.css'
 import CardList from '../../pages/cardList/cardList';
-import Paginator from '../../components/pagination/paginator';
 
+import Sidebar from '../../components/Sidebar/sidebar';
 
-const Home = ({searchValue, setSearchValue}) => {
+const Home = ({searchValue}) => {
   
   
   return (
       <div className={styles.home}>
-       
+        <Sidebar />
          <div className={styles.content}>
           <CardList searchValue={searchValue} />
-          <Paginator/>
         </div> 
       </div>
    )

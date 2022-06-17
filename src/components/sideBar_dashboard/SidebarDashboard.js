@@ -30,10 +30,10 @@ const SidebarDashboard = ({ onSearch }) => {
          </div>
          <div className={styles.nav}>   
             <ul>
-               <li><Link to="/dashboard">Home</Link>  </li>
+               <li><Link to="/securedcontent/dashboard">Home</Link>  </li>
                <li><ExternalLink href="https://www.pokemon.com/us/pokemon-news/" target="_blank">News</ExternalLink></li>
                <li><Link to="/favs">My Fav</Link></li>
-               <li><Link to="/create">Add a PokeWiki</Link></li>
+               <li><Link to="/createpokewiki">Add a PokeWiki</Link></li>
                <li><button onClick={() => onLogOut()}>Log Out</button></li>
             </ul>
          </div>

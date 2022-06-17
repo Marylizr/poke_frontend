@@ -45,16 +45,30 @@
   position: absolute;
   top: 1rem;
   right: 3rem;
+  width: 30px;
 }
 
 .read {
-  width: 150px;
-  height: 100px;
+  margin-right: 10px;
   border-radius: 5px;
   border: 1px solid lightgray;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: transparent;
   color: gray;
-  text-decoration: none;
   text-align: center;
-  padding-top: 10px;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 12px;
+}
+
+
+.delete {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  background-color: transparent;
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 700;
 }

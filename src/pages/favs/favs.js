@@ -60,7 +60,7 @@ const Favs = () => {
             <SidebarDashboard />
             
             <div className={styles.content}>
-            <h3>{name.toUpperCase()} this are your Favorites PokeWikis</h3>
+            <h3>{name} this are your Favorites PokeWikis</h3>
 
                <div className={styles.card_container}> 
                {fav && fav.length > 0 && fav.map((pokemon) =>             

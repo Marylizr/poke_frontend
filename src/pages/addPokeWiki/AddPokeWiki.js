@@ -28,7 +28,7 @@ const AddPokeWiki  = () => {
 
    return (
        <div className={styles.create}>
-         <SidebarDashboard/>
+         <SidebarDashboard />
            <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
            <h2>Create new PokeWiki</h2>
                <label>Name</label>

@@ -1,0 +1,33 @@
+.paginator > ul {
+   display: flex;
+}
+
+.paginator > ul > li {
+   display: flex;
+   font-size: 15px;
+   padding: 10px;
+   color: grey;
+   border: grey 1px solid;
+   border-radius: 30px;
+   margin: 10px;
+   width: 20px;
+   height: 20px;
+   text-align: center;
+   align-items: center;
+   justify-content: center;
+}
+
+.paginator {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.paginator > ul > li > img {
+   width: 20px;
+   height: 20px;
+   background-color: grey;
+}

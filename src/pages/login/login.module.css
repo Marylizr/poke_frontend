@@ -2,18 +2,11 @@
    display: flex;
 
 }
-.sideclass{
 
-}
-
-.content{
+.content {
+  margin-left: 20px;
    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-}
+ }
 .login_inputs > form {
    display: flex;
    flex-direction: column;
